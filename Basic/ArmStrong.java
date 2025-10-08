@@ -1,7 +1,5 @@
 //Printing 3-digit ArmStrong numbers
 
-import java.util.Scanner;
-
 public class ArmStrong {
     public static void main(String[] args){
         System.out.println("Armstrong Numbers are : ");
