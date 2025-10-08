@@ -1,5 +1,4 @@
 //Passing the parameters in a Function:-
-package Basic;
 import java.util.Scanner;
 
 public class Parameters{

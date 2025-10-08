@@ -1,4 +1,3 @@
-package Basic;
 
 //Creating Calculator using nested-if else-if :-
 import java.util.Scanner;

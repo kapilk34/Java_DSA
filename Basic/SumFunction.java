@@ -1,5 +1,4 @@
 //Program for sum of two numbers using function:-
-package Basic;
 import java.util.Scanner;
 
 public class SumFunction{

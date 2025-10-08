@@ -1,5 +1,4 @@
 //Nested Switch case:-
-package Basic;
 import java.util.Scanner;
 
 public class NestedCase {
