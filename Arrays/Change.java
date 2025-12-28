@@ -1,4 +1,4 @@
-package Array;
+package Arrays;
 
 //Changing the values of the array by function:-
 import java.util.Scanner;
