@@ -1,10 +1,10 @@
-package Array;
+package Arrays;
 
 //Changing the values of the array by function:-
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Change{
+public class ChangingValues{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the size of the array : ");
