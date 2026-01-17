@@ -1,4 +1,4 @@
-package Basic;
+
 
 public class RemovingDuplicate {
     public static void main(String[] args) {
