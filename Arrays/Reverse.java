@@ -1,6 +1,7 @@
 package Arrays;
 
 public class Reverse {
+    //Two pointer technique.
     public static void Reversing(int number[]){
         int first = 0;
         int last = number.length-1;
