@@ -1,5 +1,5 @@
 package Stack;
-
+/* 
 import java.util.*;
 
 public class BalancedBrakets {
@@ -27,10 +27,11 @@ public class BalancedBrakets {
         sc.close();
     }
 }
+    */
 
 
 
-/* import java.util.Stack;
+import java.util.Stack;
 import java.util.Scanner;
 
 public class BalancedBrackets {
@@ -72,12 +73,11 @@ public class BalancedBrackets {
         String s = sc.nextLine();
 
         if (isValid(s)) {
-            System.out.println("Balanced Brackets ✅");
+            System.out.println("Balanced Brackets");
         } else {
-            System.out.println("Not Balanced ❌");
+            System.out.println("Not Balanced");
         }
 
         sc.close();
     }
 }
- */

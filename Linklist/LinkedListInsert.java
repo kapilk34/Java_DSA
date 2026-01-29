@@ -1,4 +1,4 @@
-/*class Node {
+class Node {
     int data;
     Node next;
 
@@ -53,6 +53,23 @@ public class LinkedListInsert {
         return head;
     }
 
+
+    public static Node deleteNode(Node head, int key) {
+        if (head == null) return null;
+        if (head.data == key) {
+            return head.next;
+        }
+        Node temp = head;
+        while (temp.next != null && temp.next.data != key) {
+            temp = temp.next;
+        }
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
+        return head;
+    }
+
+
     public static void main(String[] args) {
         // existing linked list
         Node head = new Node(10);
@@ -78,7 +95,10 @@ public class LinkedListInsert {
         // head = deleteFromStart(head);
 
         // delete from end
-        head = deleteFromEnd(head);
+        // head = deleteFromEnd(head);
+
+        //deleting the node from the between the list
+        head = deleteNode(head, 30);
 
         //print updated list
         System.out.println("\nUpdated Linked List:");
@@ -90,64 +110,4 @@ public class LinkedListInsert {
         System.out.println("null");
     }
 }
-*/
 
-
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-} 
-
-public class LinkedListInsert{
-    //inserting a new node in the End of the node
-    public static Node insertAtEnd(Node head, int data){
-        Node newNode = new Node(data);
-        if(head == null){
-            return newNode;
-        }
-        Node temp = head;
-        while(temp.next != null){
-            temp = temp.next;
-        }
-        temp.next = newNode;
-        return head;
-    }
-
-    //inserting a new node in the starting of the list
-    public static Node insertAtStarting(Node head, int data){
-        Node newNode = new Node(data);
-        newNode.next = head;
-        head = newNode;
-        return head;
-    }
-
-    public static void main(String args[]){
-        Node head = new Node(10);
-        head.next = new Node(5);
-        head.next.next = new Node(25);
-        head.next.next.next = new Node(30);
-        
-        System.out.println("Existing List:");
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
-
-        head = insertAtEnd(head, 13);
-
-        System.out.println("Updated List:");
-        temp = head;
-        while(temp != null){
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
-    }
-}
