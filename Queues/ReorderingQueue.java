@@ -19,6 +19,7 @@ public class ReorderingQueue {
         q.add(100);
         System.out.println(q);
 
+        
         Stack<Integer> st = new Stack<>();
         int n = q.size();
         for(int i = 1; i <= n/2; i++){

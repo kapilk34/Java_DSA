@@ -33,7 +33,7 @@ public class ReversingKelements {
         q.add(30);
         q.add(40);
         q.add(50);
-
+        
         int k = 2;
 
         System.out.println(q);

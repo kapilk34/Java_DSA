@@ -13,6 +13,7 @@ public class Reverse {
         q.add(4);
         q.add(5);
         System.out.println(q);
+        
         Stack<Integer> st = new Stack<>();
         while(q.size() > 0){
             st.push(q.remove());

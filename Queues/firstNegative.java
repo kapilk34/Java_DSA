@@ -9,7 +9,6 @@ public class firstNegative {
         List<Integer> res = new ArrayList<>();
         int n = arr.length;
 
-
         for (int i = k - 1; i < n; i++) {
             // Skip out of window and positive elements
             while (fstNegIdx < i && (fstNegIdx <= i - k || arr[fstNegIdx] >= 0)) {
