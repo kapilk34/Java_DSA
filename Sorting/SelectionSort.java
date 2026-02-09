@@ -28,6 +28,6 @@ public class SelectionSort {
 
 /* 1. Slection sort is unstable sort
    2. It can not be optimised
-   3. Number of swaps are less
+   3. Number of swaps are less as compair to bubble sort
    4. n-1 swaps are fixed
 */

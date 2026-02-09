@@ -2,9 +2,9 @@ package Sorting;
 
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] nums = {2,5,3,7,1,4};
-        int n = nums.length;
-        for(int i = 0; i <= n-1; i++){
+        int[] nums = {12,5,3,7,1,4};
+        int n = nums.length;  
+        for(int i = 1; i <= n-1; i++){
             for(int j = i; j >= 1; j--){
                 if(nums[j] < nums[j-1]){
                     //swapping the elements of nums[j] with nums[j-1]
