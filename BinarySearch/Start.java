@@ -9,7 +9,7 @@ public class Start {
         int high = n-1;
         boolean flag = false; //false means not present
         while(low <= high){
-            int mid = (low + high)/2;
+            int mid = low + (high - low)/2;
             if(nums[mid] == target){
                 flag = true; break;
             }
