@@ -10,12 +10,9 @@ public class firstNegative {
         int n = arr.length;
 
         for (int i = k - 1; i < n; i++) {
-            // Skip out of window and positive elements
             while (fstNegIdx < i && (fstNegIdx <= i - k || arr[fstNegIdx] >= 0)) {
                 fstNegIdx++;
             }
-
-            // Check if a negative element is found, otherwise use 0
             if (fstNegIdx < n && arr[fstNegIdx] < 0) {
                 res.add(arr[fstNegIdx]);
             } else {
