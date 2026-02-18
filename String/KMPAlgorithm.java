@@ -34,7 +34,7 @@ public class KMPAlgorithm {
         int n = text.length();
         int m = pattern.length();
         ArrayList<Integer> lps = computeLPS(pattern);
-        int i = 0;  // text pointer
+        int i = 0;  // string pointer
         int j = 0;  // pattern pointer
         while (i < n) {
             if (text.charAt(i) == pattern.charAt(j)) {
