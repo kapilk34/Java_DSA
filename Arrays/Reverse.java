@@ -12,7 +12,6 @@ public class Reverse {
             // number[last] = number[first];
             // number[first] = temp;
 
-
             //swaping the numbers using the temp variable
             number[first] = number[first] + number[last];
             number[last]  = number[first] - number[last];
