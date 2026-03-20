@@ -11,6 +11,17 @@ class Linkedlist{ //user define data structure
     Node head;
     Node tail;
     int size;
+    int search(int val){
+        if(head == null) return -1;
+        Node temp = head;
+        int index = 0;
+        while(temp != null){
+            if(temp.val == val) return index;
+            temp = temp.next;
+        }
+        return -1;
+    }
+
     void addAtTail(int val){
         Node temp = new Node(val);
         if(tail == null){
