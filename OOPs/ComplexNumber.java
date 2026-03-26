@@ -12,8 +12,13 @@ class ComplexNumbers{
             System.out.println(x+"-" + (-y) + "i");
         }
     }
-    void add(ComplexNumbers z2){
-        z2.x = 8;
+    void add(ComplexNumbers z){
+        x += z.x;
+        y += z.y;
+    }
+    void multiply(ComplexNumbers z){
+        x = x * z.x - y * z.y;
+        y = x * z.y + y * z.x;
     }
 }
 public class ComplexNumber {
@@ -23,6 +28,10 @@ public class ComplexNumber {
         z1.print();
         z2.print();
         z1.add(z2);
+        z1.print();
+        z2.print();
+        z1.multiply(z2);
+        z1.print();
         z2.print();
     }
 }
