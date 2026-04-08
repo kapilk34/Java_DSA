@@ -9,7 +9,7 @@ public class sortColors {
             if(arr[i] == 0) noOfZeros++;
             if(arr[i] == 1) noOfOnces++;
         }
-        for(int i =0; i < n; i++){
+        for(int i = 0; i < n; i++){
             if(i < noOfZeros) arr[i] = 0;
             else if(i < noOfZeros + noOfOnces) arr[i] = 1;
             else arr[i] = 2;
