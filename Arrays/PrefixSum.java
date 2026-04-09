@@ -8,10 +8,10 @@ public class PrefixSum {
         for(int i = 1; i < n; i++){
             prefixSum[i] = prefixSum[i-1] + arr[i];
         }
-         return prefixSum;
+        return prefixSum;
     }
     public static void main(String[] args) {
-         int[] nums = {2, 4, 6, 8};
+        int[] nums = {2, 4, 6, 8};
         int[] prefixSum = prefixArray(nums);
 
         for (int val : prefixSum) {
