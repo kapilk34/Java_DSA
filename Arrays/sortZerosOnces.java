@@ -6,11 +6,11 @@ public class sortZerosOnces {
         int NoOfZeros = 0;
         
         //methord 1st
-        /*for(int i = 0; i < n; i++){
+        for(int i = 0; i < arr.length; i++){
             if(arr[i] == 0) NoOfZeros++;
         }
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < arr.length; i++){
             if(i < NoOfZeros){
                 arr[i] = 0;
             }    
@@ -22,27 +22,26 @@ public class sortZerosOnces {
             System.out.print(ele+" ");
         }
         System.out.println();
-        */
 
 
         //Method 2nd
-        int i = 0, j = 1;
+        // int i = 0, j = 1;
 
-        while(i < j){
-            if(arr[i] == 0 && arr[j] == 1){
-                i++;
-                j++;
-            }
-            if(i > j && arr[i] == 0 && arr[j] == 1){
-                arr[i] = 0;
-                arr[j] = 1;
-                i++;
-                j++;
-            }
-        }
-        for(int ele : arr){
-            System.out.print(ele+" ");
-        }
-        System.out.println();
+        // while(i < j){
+        //     if(arr[i] == 0 && arr[j] == 1){
+        //         i++;
+        //         j++;
+        //     }
+        //     if(i > j && arr[i] == 0 && arr[j] == 1){
+        //         arr[i] = 0;
+        //         arr[j] = 1;
+        //         i++;
+        //         j++;
+        //     }
+        // }
+        // for(int ele : arr){
+        //     System.out.print(ele+" ");
+        // }
+        // System.out.println();
     }
 }

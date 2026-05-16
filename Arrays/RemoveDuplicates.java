@@ -22,3 +22,4 @@ public class RemoveDuplicates {
         System.out.println(duplicates(nums));
     }
 }
+
