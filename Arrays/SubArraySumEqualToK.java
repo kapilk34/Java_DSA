@@ -21,8 +21,9 @@ public class SubArraySumEqualToK {
     }
     
     public static void main(String[] args) {
-        int[] nums = {1,1,1};
-        int k = 2;
+        int[] nums = {3, 4, 7, 2, -3, 1, 4, 2};
+        int k = 7;
         System.out.println(arraySum(nums, k));
     }
 }
+

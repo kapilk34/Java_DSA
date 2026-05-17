@@ -28,3 +28,4 @@ public class MajorityElements {
         System.out.println(majority(nums));
     }
 }
+
