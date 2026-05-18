@@ -24,3 +24,4 @@ public class NGE {
         System.out.println(Arrays.toString(result));
     }
 }
+
