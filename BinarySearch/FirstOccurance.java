@@ -20,8 +20,9 @@ public class FirstOccurance {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 3, 5, 5, 5, 5, 67, 123, 125};
-        int target = 5;
+        int[] nums = {1, 3, 5, 5, 5, 5, 6, 6, 67, 123, 125};
+        int target = 6;
         System.out.println("First occurrence at index: " + occurance(nums, target));
     }
 }
+
